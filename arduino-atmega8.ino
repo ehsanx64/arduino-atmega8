@@ -1,23 +1,24 @@
+// Two LEDs are connected to pins 11 and 12
 #define RED LED_BUILTIN
 #define GREEN 11
 #define BLUE 12
 
 void setup() {
-	pinMode(LED_BUILTIN, OUTPUT);
-	pinMode(11, OUTPUT);
-	pinMode(12, OUTPUT);
+	pinMode(RED, OUTPUT);
+	pinMode(GREEN, OUTPUT);
+	pinMode(BLUE, OUTPUT);
 }
 
 void all_off() {
 	digitalWrite(LED_BUILTIN, LOW);
-	digitalWrite(11, LOW);
-	digitalWrite(12, LOW);
+	digitalWrite(GREEN, LOW);
+	digitalWrite(BLUE, LOW);
 }
 
 void all_on() {
 	digitalWrite(LED_BUILTIN, HIGH);
-	digitalWrite(11, HIGH);
-	digitalWrite(12, HIGH);
+	digitalWrite(GREEN, HIGH);
+	digitalWrite(BLUE, HIGH);
 }
 
 void on(int pin) {
