@@ -1,5 +1,7 @@
-#include <Arduino.h>
 
+
+#ifdef TONE_ENABLED
+#include <Arduino.h>
 #include "tone.h"
 
 #if TONE_MELODY_ENABLED
@@ -43,4 +45,6 @@ void play_tone() {
         noTone(TONE_BUZZER);
     }
 }
+#endif
+
 #endif
